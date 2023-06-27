@@ -1,0 +1,61 @@
+input{
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  background: none;
+  outline: none;
+  display:flex;
+  
+}
+.form{
+  display:flex;
+  flex-direction:column;
+  width:30%;
+  margin-right: 5rem;
+  margin-top:2rem;
+  gap:2rem;
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  height: min-content;
+}
+.emailInput{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+}
+.passwordInput{
+  display:flex;
+  flex-direction: column;
+  width: 100%;
+}
+.parent{
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+.illustration{
+  width: 1000px;
+  height: 100vh;
+  background-image: url('./assets/images/bg-vector.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.circle1{
+  position: absolute;
+  left: 680px;
+  bottom: 200px;
+  /* animation: moveAnimation 2000ms infinite; */
+}
+.circle2{
+  position: absolute;
+  left: 40%;
+  top: 10%;
+}
+
+@keyframes moveAnimation {
+  0%   {left: 680px;}
+  25%  {left: 730px;}
+  50%  {bottom: 200px;}
+  100%  {bottom: 200px;}
+}
