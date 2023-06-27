@@ -28,6 +28,9 @@ input{
   flex-direction: column;
   width: 100%;
 }
+input{
+  border: 2px solid rgba(0, 0, 0, 0.123);
+}
 .parent{
   display: flex;
   justify-content: space-between;
@@ -42,10 +45,11 @@ input{
   position: relative;
 }
 .circle1{
+  width: 15%;
   position: absolute;
   left: 680px;
   bottom: 200px;
-  /* animation: moveAnimation 2000ms infinite; */
+  animation: moveAnimation 4000ms infinite ease-in-out;
 }
 .circle2{
   position: absolute;
@@ -55,7 +59,8 @@ input{
 
 @keyframes moveAnimation {
   0%   {left: 680px;}
-  25%  {left: 730px;}
-  50%  {bottom: 200px;}
-  100%  {bottom: 200px;}
+  25%  {left: 700px;}
+  50%  {bottom: 220px;}
+  75%   {left: 660px;}
+  100%  {left: 680px;bottom: 200px;}
 }

@@ -18,7 +18,7 @@ const App = () => {
     if(formData.email !== '' && formData.password !== '') {
       return
     }
-    const randX = Math.floor(Math.random() * (window.innerWidth / 2));
+    const randX = Math.floor(Math.random() * (window.innerWidth / 4));
     const randY = Math.floor(Math.random() * (window.innerHeight - 500));
     setPosition({ left: randX, top: randY });
   };
