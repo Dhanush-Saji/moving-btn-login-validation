@@ -21,6 +21,7 @@ const App = () => {
     const randX = Math.floor(Math.random() * (window.innerWidth / 4));
     const randY = Math.floor(Math.random() * (window.innerHeight - 500));
     setPosition({ left: randX, top: randY });
+    // console.log('test')
   };
 
   const handleClick = () => {
